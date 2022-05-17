@@ -13,5 +13,12 @@ For this assignment, you will write a small Python program to perform NER and se
 This assignment
 
 ## 3. Usage ```real_or_fake.py```
+To run the code you should:
+- Pull this repository with this folder structure
+- Place the data in ```in```
+- Install the packages mentioned in ```requirements.txt```
+- Set your current working directory to the level above ```src```
+- Write in the command line: ```python src/real_or_fake.py```
+   - You can see the outputs of the code in ```out```
 
 ## 4. Discussion of Results
