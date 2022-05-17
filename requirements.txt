@@ -5,4 +5,4 @@ Import the following libraries to run real_or_fake.py:
 - spacy 
 - from spacytextblob.spacytextblob import SpacyTextBlob
 - matplotlib.pyplot
-- import argparse
+- argparse
