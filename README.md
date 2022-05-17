@@ -7,3 +7,9 @@ For this assignment, you will write a small Python program to perform NER and se
      - Get the sentiment of the final sentence.
      - Plot the results over time, with one visualisation showing sentiment of opening sentences over time and one of closing sentences over time.
      - Find the 20 most common geopolitical entities mentioned across the whole corpus - plot the result as a bar chart.
+
+## 2. Methods
+
+## 3. Usage ```real_or_fake.py```
+
+## 4. Discussion of Results
