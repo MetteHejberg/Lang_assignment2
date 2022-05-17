@@ -10,6 +10,7 @@ For this assignment, you will write a small Python program to perform NER and se
 - Find the 20 most common geopolitical entities mentioned across each dataset - plot the results as a bar charts
   
 ## 2. Methods
+This assignment
 
 ## 3. Usage ```real_or_fake.py```
 
