@@ -1,1 +1,8 @@
-
+Import the following libraries to run real_or_fake.py:
+- os
+- pandas
+- numpy
+- spacy 
+- from spacytextblob.spacytextblob import SpacyTextBlob
+- matplotlib.pyplot
+- import argparse
