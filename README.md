@@ -1,7 +1,7 @@
 ## 1. Assignment 2 - Sentiment and NER
 For this assignment, you will write a small Python program to perform NER and sentiment analysis using the techniques you saw in class. You have the choice of one of two different tasks:
 
-Using the corpus of Fake vs Real news, write some code which does the following
+2. Using the corpus of Fake vs Real news, write some code which does the following
 - Split the data into two datasets - one of Fake news and one of Real news
 - For every headline
    - Get the sentiment scores
