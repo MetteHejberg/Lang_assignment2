@@ -14,7 +14,7 @@ def load_process_data(file):
     # add spacy pipe 
     nlp.add_pipe('spacytextblob')
     # define a filepath
-    filepath = os.path.join("..", "CDS-LANG", "tabular_examples", file)
+    filepath = os.path.join("in", "tabular_examples", file)
     # get the data
     data = pd.read_csv(filepath)
     # split the data according to labels = fake or real 
@@ -90,8 +90,6 @@ def top20(dataframe, name):
     plt.ylabel("Frequency")
     # add title
     plt.title("Top 20 geopolitical entities")
-    # I would like to change the y axis using the following code, but I can't get it to work
-    plt.ylim(0,110)
     # plot as bar chart
     plt.bar(x, y, color = "red", width = 0.8)
     # define outpath
