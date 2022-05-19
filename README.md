@@ -1,4 +1,6 @@
 ## 1. Assignment 2 - Sentiment and NER
+Link to repository: https://github.com/MetteHejberg/Lang_assignment2
+
 For this assignment, you will write a small Python program to perform NER and sentiment analysis using the techniques you saw in class. You have the choice of one of two different tasks:
 
 2. Using the corpus of Fake vs Real news, write some code which does the following
@@ -15,6 +17,8 @@ This assigment uses ```SpaCy TextBlob``` to perform sentiment analysis on real a
 This script explores the sentiments towards mentions of GPEs, which are geopolitical entities such as countries. The data is firstly split into real and fake headlines. The script then uses ```spacy``` to tokenize the text, get the GPEs mentions and sentiments of the entire headline. Then it creates a dataframe with ```pandas``` with the text IDs, GPEs, sentiments, and headlines which is then saved to ```out```
 
 The script furthermore finds the 20 most common GPE mentions for both the real and fake data and plots them as bar charts with ```package```. 
+
+Get the data from here:
 
 ## 3. Usage ```real_or_fake.py```
 To run the code you should:
