@@ -26,7 +26,8 @@ To run the code you should:
 - Place the data in ```in```
 - Install the packages mentioned in ```requirements.txt```
 - Set your current working directory to the level above ```src```
-- Write in the command line: ```python src/real_or_fake.py```
+- Write in the command line: ```python src/real_or_fake.py -f "the file to use"```
+   - The file to use is in this instance "fake_or_real_news.csv" but the code can work with few adjustments for many other binary classifications
    - You can see the outputs of the code in ```out```
 
 ## 4. Discussion of Results
