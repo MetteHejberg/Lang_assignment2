@@ -68,7 +68,7 @@ def save_csv(dataframe, name):
     return dataframe
 
 # get the 20 most common mentioned GPEs in both datasets 
-def top20(dataframe, name):
+def top20(dataframe, title, name):
     # get the amount of times each GPEs is mentioned
     dataframe_counts = dataframe.value_counts("GPE")
     # get top 20
@@ -79,17 +79,17 @@ def top20(dataframe, name):
     top20_mentions_final = list(zip(top20_mentions.index, top20_mentions_list))
     
     # define the plot
+    plt.figure(figsize = (10,12))
     labels, y = zip(*top20_mentions_final)
     x = np.arange(len(labels))
     y_ticks = list(range(0,100,10))
     # plot into bar chart
     plt.xticks(x, labels, rotation=75)
     plt.yticks(y_ticks)    
-    # add axes labels
-    plt.xlabel("Geopolitical entities")
     plt.ylabel("Frequency")
     # add title
-    plt.title("Top 20 geopolitical entities")
+    plt.title(title)
+    plt.ylim(0,110)
     # plot as bar chart
     plt.bar(x, y, color = "red", width = 0.8)
     # define outpath
@@ -111,18 +111,18 @@ def parse_args():
 def main():
     args = parse_args()
     nlp, real_data, fake_data = load_process_data(args["file"])
-    print("creating real news output")
+    print("[INFO]: creating real news output")
     real_ents = find_entities(nlp, real_data)
     real_sents = find_sents(nlp, real_data)
     real_output = create_output(real_data, real_ents, real_sents)
     real_dataframe = save_csv(real_output, "real_news_sentiment_analysis.csv")
-    top20(real_dataframe, "real_news_top20_gpe.jpg")
-    print("creating fake news output")
+    top20(real_dataframe, "Top 20 Geopolitical Entities in Real News", "real_news_top20_gpe.jpg")
+    print("[INFO]: creating fake news output")
     fake_ents = find_entities(nlp, fake_data)
     fake_sents = find_sents(nlp, fake_data)
     fake_output = create_output(fake_data, fake_ents, fake_sents)
     fake_dataframe = save_csv(fake_output, "fake_news_sentiment_analysis.csv")
-    top20(fake_dataframe, "fake_news_top20_gpe.jpg")
+    top20(fake_dataframe, "Top 20 Geopolitical Entities in Fake News", "fake_news_top20_gpe.jpg")
 
 if __name__ == "__main__":
     main()
