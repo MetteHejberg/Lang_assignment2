@@ -18,7 +18,7 @@ This script explores the sentiments towards mentions of GPEs, which are geopolit
 
 The script furthermore finds the 20 most common GPE mentions for both the real and fake data and plots them as bar charts with ```package```. 
 
-Get the data from here:
+Ross Deans Kristensen-McLachlan will provide the data
 
 ## 3. Usage ```real_or_fake.py```
 To run the code you should:
