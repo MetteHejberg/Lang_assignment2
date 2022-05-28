@@ -23,7 +23,7 @@ Ross Deans Kristensen-McLachlan will provide the data
 ## 3. Usage ```real_or_fake.py```
 To run the code you should:
 - Pull this repository with this folder structure
-- Place the data in ```in```
+- Place the data in a folder called ```tabular_examples``` in ```in```
 - Install the packages mentioned in ```requirements.txt```
 - Set your current working directory to the level above ```src```
 - Write in the command line: ```python src/real_or_fake.py -f "the file to use"```
